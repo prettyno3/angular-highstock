@@ -1,0 +1,14 @@
+<div style="width: 100%; float: left;">
+    <h2>Demo #2: Highstock with simple updates</h2>
+    <div>
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [constructorType]="'stockChart'"
+        [options]="charts[usedIndex].hcOptions"
+        [callbackFunction]="charts[0].hcCallback"
+        [(update)]="updateDemo2"
+  
+        style="width: 100%; height: 350px; display: block;"
+      ></highcharts-chart>
+    </div>
+  </div>

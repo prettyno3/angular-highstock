@@ -1,0 +1,10 @@
+<div *ngIf="stock">
+  <h2>{{ stock.ticker | uppercase }} Details</h2>
+  <div><span>ticker: </span>{{stock.ticker}}</div>
+  <div>
+      <label>Bought price:
+        <input [(ngModel)]="stock.boughtPrice" placeholder="bought price">
+      </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

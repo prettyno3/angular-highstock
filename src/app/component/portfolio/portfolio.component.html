@@ -1,0 +1,10 @@
+<h2>My Heroes</h2>
+<ul class="portfolio">
+  <li *ngFor="let stock of portfolio"
+    [class.selected]="stock === selectedStock"
+    (click)="onSelect(stock)">
+    <span class="badge">{{stock.ticker}}</span> {{stock.boughtPrice}}
+  </li>
+</ul>
+
+<app-stock-detail [stock]="selectedStock"></app-stock-detail>
